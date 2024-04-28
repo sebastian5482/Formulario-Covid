@@ -1,0 +1,170 @@
+<div class="col-md-8 mx-auto">
+  <div class="card">
+    <div class="card-header">
+      <h3>Formulario Covid-19</h3>
+    </div>
+    <div class="card-body">
+      <form action="/forms/new" method="POST">
+        <div class="form-group row">
+          <div class="row col-md-12 form-inline">
+            <font size="3" class="col-sm-8">¿Dónde se encuentra hoy?</font>
+            <select name="lugar" class="form-select form-control col-sm-4">
+              <option selected>Seleccione una opción</option>
+              <option value="Universidad">Universidad</option>
+              <option value="Casa">Casa</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <font size="3">¿Que sintomas ha tenido?</font>
+          <div class="row p-3">
+            <div class="form-check form-check-inline col-md-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="sintoma1"
+                id="sintoma1"
+                value="Fiebre"
+              />
+              <label class="form-check-label" for="sintoma1">
+                <font size="3">Fiebre</font>
+              </label>
+            </div>
+
+            <div class="form-check form-check-inline col-md-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="sintoma2"
+                id="sintoma2"
+                value="Tos"
+              />
+              <label class="form-check-label" for="sintoma2">
+                <font size="3">Tos</font>
+              </label>
+            </div>
+            <div class="form-check form-check-inline col-md-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="sintoma3"
+                id="sintoma3"
+                value="Cansancio"
+              />
+              <label class="form-check-label" for="sintoma3">
+                <font size="3">Cansancio</font>
+              </label>
+            </div>
+            <div class="form-check form-check-inline col-md-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="sintoma4"
+                id="sintoma4"
+                value="Perdida del gusto"
+              />
+              <label class="form-check-label" for="sintoma4">
+                <font size="3">Perdida del gusto</font>
+              </label>
+            </div>
+            <div class="form-check form-check-inline col-md-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="sintoma5"
+                id="sintoma5"
+                value="perdida del olfato"
+              />
+              <label class="form-check-label" for="sintoma5">
+                <font size="3">Perdida del olfato</font>
+              </label>
+            </div>
+            <div class="form-check form-check-inline col-md-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="sintoma6"
+                id="sintoma6"
+                value="Dolor de articulaciones"
+              />
+              <label class="form-check-label" for="sintoma6">
+                <font size="3">Dolor de articulaciones</font>
+              </label>
+            </div>
+            <div class="form-check form-check-inline col-md-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="sintoma7"
+                id="sintoma7"
+                value="Dificultad respiratiora"
+              />
+              <label class="form-check-label" for="sintoma7">
+                <font size="3">Dificultad respiratiora</font>
+              </label>
+            </div>
+            <div class="form-check form-check-inline col-md-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="sintoma8"
+                id="sintoma8"
+                value="Dolor en el pecho"
+              />
+              <label class="form-check-label" for="sintoma8">
+                <font size="3">Dolor en el pecho</font>
+              </label>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="form-inline row col-md-12">
+            <font size="3" class="col-sm-8">¿Esta Vacunado?</font>
+            <select name="estaVacuna" class="form-select form-control col-sm-4">
+              <option selected>Seleccione una opción</option>
+              <option value="Si, Completamente">Si, Completamente</option>
+              <option value="Si, Parcialmente">Si, Parcialmente</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="form-inline row col-md-12">
+            <font size="3" class="col-sm-8">¿Ha estado cerca de alguien
+              contagiado los últimos 15 días?</font>
+            <select name="cercacovid" class="form-select form-control col-sm-4">
+              <option selected>Seleccione una opción</option>
+              <option value="Si">Si</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="row col-md-12 form-inline">
+            <font size="3" class="col-sm-8">¿Se ha realizado la prueba?, y si es
+              sí ¿Cuál fue el resultado?
+            </font>
+            <select name="prueba" class="form-select form-control col-sm-4">
+              <option selected>Seleccione una opción</option>
+              <option value="Si, Positivo">Si, Positivo</option>
+              <option value="Si, Negativo">Si, Negativo</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+        </div>
+
+        <hr />
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button class="btn btn-outline-warning" type="submit">
+            Guardar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

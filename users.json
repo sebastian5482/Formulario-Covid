@@ -1,0 +1,85 @@
+[{
+  "_id": {
+    "$oid": "628abbf622e4968b239b93ed"
+  },
+  "name": "sebastian",
+  "email": "sorozco.2411@gmail.com",
+  "password": "$2a$10$GWupX.Hcco7rsk0GjMNir.SzB1Q1v8Nkmzg2Xppvlz7LN0ir0gt3i",
+  "rol": "Estudiante",
+  "date": {
+    "$date": {
+      "$numberLong": "1653259254077"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628c23ff0897bedb37c589a4"
+  },
+  "name": "Cesar",
+  "email": "cesar@unaula.edu.co",
+  "password": "$2a$10$11LtiOknLIxAwKdZBjfS7e.jWnd/fspTiMgdgaPErDgZ7dDIZ/48q",
+  "rol": "admin",
+  "date": {
+    "$date": {
+      "$numberLong": "1653351423892"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628fa10b13910991aebae5c7"
+  },
+  "name": "Angie",
+  "email": "angie@unaula.edu.co",
+  "password": "$2a$10$06Zg7nu2M7jpHIF5MOi.NeEg6/aYRamt5nW0wh3/TttrVRmjVh6RS",
+  "rol": "Estudiante",
+  "date": {
+    "$date": {
+      "$numberLong": "1653580043064"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628faa6e71a050fb5f4b090c"
+  },
+  "name": "Manuela",
+  "email": "manu13@unaula.edu.co",
+  "password": "$2a$10$/95FdyKTmRzmnkgO.lCeEOO3N.WqhJsnxxvMvJLrcQnvUFEHZgE4K",
+  "rol": "Administrativo",
+  "date": {
+    "$date": {
+      "$numberLong": "1653582446592"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628faa9871a050fb5f4b090f"
+  },
+  "name": "Luz",
+  "email": "luz@gmail.com",
+  "password": "$2a$10$cXU5AGVDeKYxyQZwnz7Cn.kZ2tGDno3nahTL2UD0PjWQ/Fof65e26",
+  "rol": "Operativo",
+  "date": {
+    "$date": {
+      "$numberLong": "1653582488682"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628fc8a3910914bca9519282"
+  },
+  "name": "Universidad",
+  "email": "universidad@unaula.edu.co",
+  "password": "$2a$10$slWsW5PqvJ.Sk0SeH5/YNuza2YAhCEohDmtXNL/btL9tF01T9wnCK",
+  "rol": "Rol",
+  "date": {
+    "$date": {
+      "$numberLong": "1653590179457"
+    }
+  },
+  "__v": 0
+}]

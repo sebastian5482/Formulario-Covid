@@ -1,0 +1,87 @@
+<section class="container">
+  <div class="row">
+    {{#if forms}}
+      <div class="col block">
+        <h2>Formularios</h2>
+        <div class="row">
+          {{#each forms}}
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item pb-0">
+                    <h5>Formulario No.</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{_id}}</h6>
+                  </li>
+                  <li class="list-group-item pb-0">
+                    <p><b>Nombre:</b> {{user.name}}</p>
+                    <p><b>Email:</b> {{user.email}}</p>
+                    <p><b>Rol:</b> {{user.rol}}</p>
+                  </li>
+                  <li class="list-group-item pb-0">
+                    <p><b>Lugar:</b> {{lugar}}</p>
+                    <p><b>¿Prueba realizada?:</b> {{prueba}}</p>
+                    <p><b>¿Ha estado cerca de alguien con síntomas?:</b> {{cercacovid}}</p>
+                  </li>
+                  <li class="list-group-item">
+                    <form
+                      action="/forms/delete/{{_id}}?_method=DELETE"
+                      method="POST"
+                    >
+                      <input type="hidden" name="_method" value="DELETE" />
+                      <button
+                        class="btn btn-danger btn-block btn-sm"
+                        type="submit"
+                      >
+                        Eliminar
+                      </button>
+                    </form>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+      <div class="col block form-group">
+        <canvas
+          id="myChart"
+          width="100vh"
+          height="100vh"
+          {{! style="background-color: #fff;" }}
+        ></canvas>
+      </div>
+    {{else}}
+      <div class="card mx-auto roundered">
+        <div class="card-body">
+          <h2>Hola {{name}}</h2>
+          <p class="lead">Aún no hay registros de formularios.</p>
+          <a href="/forms/add" class="btn btn-warning btn-block">Registrar
+            Formulario</a>
+        </div>
+
+      </div>
+    {{/if}}
+  </div>
+</section>
+
+<script>
+  let ctx = document.getElementById("myChart").getContext("2d"); 
+  let myChart = new Chart(
+        ctx, 
+        { 
+            type: "pie", 
+            data: { 
+                labels: ['Fiebre', 'Tos', 'Cansancio', 'Perdida del gusto', 'Perdida del olfato', 'Dolor de articulaciones', 'Dificultad respiratoria', 'Dolor en el pecho'], 
+                datasets: [{ label: 'Cantidad de sintomas', data: [{{data}}],  
+                backgroundColor: ['#006666', '#663300', '#336666', '#339966', '#333333',  '#003333', '#0099FF', '#663333'] }] 
+            },
+            options: { 
+                responsive: true, 
+                plugins: {
+                    legend: { position: 'top', }, 
+                    title: { display: true, text: 'Gráfica de  Síntomas' } 
+                } 
+            } 
+        }
+    );
+</script>
