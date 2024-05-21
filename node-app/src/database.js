@@ -1,9 +1,7 @@
 const mongoose = require('mongoose');
-const dbURI = mongodb+srv://sebaso2411:2382570s@covid.sxxhiiz.mongodb.net/?retryWrites=true&w=majority&appName=Covid;
 
-mongoose.connect(dbURI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+mongoose.connect('mmongodb+srv://sebaso2411:2382570s@covid.sxxhiiz.mongodb.net/?retryWrites=true&w=majority&appName=Covi/Covid-19', {
+   
 })
-    .then(() => console.log('DB is connected'))
-    .catch(err => console.error(err));
+    .then(db => console.log('DB is connected'))
+    .catch(err => console.error(err))
