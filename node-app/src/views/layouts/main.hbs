@@ -26,6 +26,36 @@
 </main>
 {{{ body }}}
 
+    <div class="float" id="main-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </div>
+
+    <div class="options">
+        <a href="https://wa.me/573105354021" target="_blank" class="option">Administración</a>
+        <a href="https://wa.me/573105354021" target="_blank" class="option">Bienestar</a>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const mainButton = document.getElementById('main-button');
+        const options = document.querySelector('.options');
+        
+        mainButton.addEventListener('click', function() {
+            if (options.style.display === 'none' || options.style.display === '') {
+                options.style.display = 'flex';
+            } else {
+                options.style.display = 'none';
+            }
+        });
+        
+        document.addEventListener('click', function(event) {
+            if (!mainButton.contains(event.target) && !options.contains(event.target)) {
+                options.style.display = 'none';
+            }
+        });
+    });
+</script>
 
 <!-- Scripts-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
