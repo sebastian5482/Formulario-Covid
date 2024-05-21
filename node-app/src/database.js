@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
-const dbURI = 'mongodb+srv://sebaso2411:2382570s@covid.sxxhiiz.mongodb.net/Covid-19?retryWrites=true&w=majority&appName=Covi';
+const dbURI = process.env.MONGODB_URI;
 
 mongoose.connect(dbURI, {
   useNewUrlParser: true,
