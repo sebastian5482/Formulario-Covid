@@ -32,3 +32,55 @@ body {
 .logo {
   width: 40%;
 }
+.wb {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .float {
+          position: fixed;
+          width: 50px;
+          height: 50px;
+          bottom: 16px;
+          right: 3px;
+          background-color: #25d366;
+          border-radius: 55%;
+          text-align: center;
+          box-shadow: 2px 2px 3px #999;
+          z-index: 100;
+        }
+
+        .float img {
+          width: 94%;
+          height: 100%;
+          border-radius: 50%;
+      }
+
+        .options {
+            display: none;
+            position: absolute;
+            bottom: 70px;
+            right: 0;
+            flex-direction: column;
+        }
+
+        .option {
+            background-color: #25D366;
+            color: white;
+            padding: 10px 15px;
+            margin: 5px 0;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+
+        .option:hover {
+            background-color: #025f2c;
+        }
+        a:hover {
+          color: #ffffff;
+          text-decoration: none;
+      }
